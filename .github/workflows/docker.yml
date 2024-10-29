@@ -19,5 +19,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: westside/cicd_github_actions:latest
+          tags: westsidee/cicd_github_actions:latest
         #   ssh-keygen -t rsa -b 4096 -C "viktorovjavohir@gmail.com»
