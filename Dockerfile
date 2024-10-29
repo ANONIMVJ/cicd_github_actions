@@ -4,7 +4,7 @@ ADD padckage*.json ./
 RUN npm ci
 RUN npm run build --prod
 
-FROM nodeL:alpine
+FROM node:alpine
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
 ADD package*.json ./
