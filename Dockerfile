@@ -5,7 +5,7 @@ RUN npm ci
 RUN npm run build --prod
 
 FROM nodeL:alpine
-WORKDER /app
+WORKDIR /app
 COPY --from=builder /app/dist ./dist
 ADD package*.json ./
 RUN npm ci --omit=dev
